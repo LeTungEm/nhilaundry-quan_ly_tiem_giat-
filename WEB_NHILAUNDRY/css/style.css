@@ -1,0 +1,84 @@
+a{
+    text-decoration: none!important;
+}
+/*========================================================================*/
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1)!important;
+}
+
+#header{
+    background-image: url("../media/image/header/headerBackGround.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    /*background-color: rgb(0 0 0 / 50%);*/
+}
+
+/*===================================HOME=====================================*/
+.blur-text{
+    text-shadow: 1px 1px .5px gray, 0 0 1em white, 0 0 0.15em black;
+    color: white;
+}
+
+.scrollView {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none; */
+}
+
+.scrollVer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+.scrollVer::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+@media(max-width: 1000px){
+    #btnLogin{
+        margin-top: 5px !important;
+        margin-left: 0px !important; 
+    }
+}
+
+@media(max-width: 600px){
+    #carouselExampleDark{
+        display: block!important;
+    }
+    #listSP{
+        display: none!important;
+    }
+    .img-content img{
+        max-width: 300px !important;
+    }
+    
+    .home-body figure{
+        max-width: 90%!important;
+    }
+    
+}
+@media(max-width:500px){
+    #header{
+        background-image: url("../media/image/header/headerBackGround_mb.jpg")!important;
+        background-position: top!important;
+        background-size: inherit!important;
+    }
+    
+    .product-info .col{
+        font-size: 10px !important;
+    }
+
+    .product-info .col i,a{
+        display: flex !important;
+        font-size: 17px !important;
+    }
+}
